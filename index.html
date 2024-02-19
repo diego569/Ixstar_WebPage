@@ -20,6 +20,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Agrega el enlace al CSS de Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Agrega el enlace al JS de Bootstrap y a jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -32,24 +38,42 @@
 </head>
 
 <body>
-    <!-- Modal -->
+   
+    <!-- Modal con carrusel -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Convocatorias</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <img src="/img/banner.png" alt="Imagen" style="max-width: 100%; height: auto;">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/banner.png" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/banner2.jpeg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <!-- Agrega más elementos carousel-item para más imágenes -->
+                </div>
+            
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                
+                </button>
+            
+            </div>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             <a class="btn btn-primary" href="team.html">Más información</a>
-
-            <!--
-            <button type="button" class="btn btn-primary" href="team.html">Más información</button>
-            -->
             </div>
         </div>
         </div>
@@ -453,13 +477,43 @@
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                 <h1 class="display-6 mb-5">Sé parte de nuestro equipo</h1>
             </div>
+            <div class="table-container">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Convocatoria</th>
+                        <th>Bases</th>
+                        <th>Declaración Jurada</th>
+                        <th>Postular</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Convocatoria 02-2024</td>
+                        <td><a class="btn btn-primary-custom btn-icon" href="files/BASES1.pdf" target="_blank"><i class="fas fa-file-pdf text-danger"></i></a></td>
+                        <td><a class="btn btn-primary-custom btn-icon" href="files/DEC_JURADA1.docx" target="_blank"><i class="fas fa-file-word text-primary"></i></a></td>
+                        <td><a class="btn btn-primary" href="https://forms.gle/Z2kjDThwjVNd7aMY8" target="_blank">Postular</a></td>
+                      </tr>
+                      <tr>
+                        <td>Convocatoria 03-2024</td>
+                        <td><a class="btn btn-primary-custom btn-icon" href="files/BASES3.pdf" target="_blank"><i class="fas fa-file-pdf text-danger"></i></a></td>
+                        <td><a class="btn btn-primary-custom btn-icon" href="files/DEC_JURADA1.docx"" target="_blank"><i class="fas fa-file-word text-primary"></i></a></td>
+                        <td><a class="btn btn-primary" href="https://forms.gle/owGqmqiGDmJea9zB6" target="_blank">Postular</a></td>
+                      </tr>
+                      <!-- Agrega más filas para más convocatorias -->
+                    </tbody>
+                  </table>
+            </div>
             
             <div class="row g-4">
+                <!--
                 <div class="upload-btns">
                     <a class="btn btn-primary btn-rectangle m-2" href="/files/BASES.pdf" download><i class="dwld-i far fa-file-pdf"></i>Bases</a>
                     <a class="btn btn-rectangle btn-primary m-2" href="/files/DEC_JURADA.docx" download><i class="dwld-i far fa-file-word"></i>Dec. Jurada</a>
                     
                 </div>
+                 -->
+           
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                     <div class="team-item">
                         <div class="team-img position-relative overflow-hidden">
@@ -472,7 +526,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5>Ingeniería Civil</h5>
-                            <span class="text-primary">Convocatorias ABIERTAS</span>
+                            <span class="text-primary">Titulados, bachilleres y egresados</span>
                         </div>
                     </div>
                 </div>
@@ -488,7 +542,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5>Ingeniería Topográfica</h5>
-                            <span class="text-primary">Convocatorias cerradas</span>
+                            <span class="text-primary">Titulados, bachilleres y egresados</span>
                         </div>
                     </div>
                 </div>
@@ -504,7 +558,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5>Arquitectura</h5>
-                            <span class="text-primary">Convocatorias ABIERTAS</span>
+                            <span class="text-primary">Titulados, bachilleres y egresados</span>
                         </div>
                     </div>
                 </div>
@@ -520,7 +574,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5>Ingeniería Mecánica Eléctrica</h5>
-                            <span class="text-primary">Convocatorias cerradas</span>
+                            <span class="text-primary">Titulados, bachilleres y egresados</span>
                         </div>
                     </div>
                 </div>
@@ -538,7 +592,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5>Ingeniería Sanitaria y Ambiental</h5>
-                            <span class="text-primary">Convocatorias cerradas</span>
+                            <span class="text-primary">Titulados, bachilleres y egresados</span>
                         </div>
                     </div>
                 </div>
@@ -554,7 +608,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5>Ingeniería Económica</h5>
-                            <span class="text-primary">Convocatorias ABIERTAS</span>
+                            <span class="text-primary">Titulados, bachilleres y egresados</span>
                         </div>
                     </div>
                 </div>
@@ -570,7 +624,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5>Administración de Empresas</h5>
-                            <span class="text-primary">Convocatorias ABIERTAS</span>
+                            <span class="text-primary">Titulados, bachilleres y egresados</span>
                         </div>
                     </div>
                 </div>
@@ -586,13 +640,13 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5>Derecho</h5>
-                            <span class="text-primary">Convocatorias ABIERTAS</span>
+                            <span class="text-primary">Titulados, bachilleres y egresados</span>
                         </div>
                     </div>
                 </div>
-                <a href="https://forms.gle/Z2kjDThwjVNd7aMY8" class="btn btn-primary py-3 px-5 animated slideInDown">POSTULAR</a>
-            </div>
+                
         </div>
+    </div>
     </div>
     <!-- Team End -->
 
