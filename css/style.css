@@ -32,19 +32,19 @@
     max-width: 100%; /* ajusta el tamaño de las imágenes al 50% */
     margin: auto; /* centra las imágenes horizontalmente */
   }
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     .modal-dialog {
-      max-width: 30%; /* ajusta el ancho del modal al 30% del ancho de la ventana */
+    max-width: 30%; /* ajusta el ancho del modal al 30% del ancho de la ventana */
     }
-  }
+}
 
-  /* Estilos para dispositivos pequeños (pantallas más pequeñas de 992px de ancho) */
-  @media (max-width: 991.98px) {
+/* Estilos para dispositivos pequeños (pantallas más pequeñas de 992px de ancho) */
+@media (max-width: 991.98px) {
     .modal-dialog {
-      max-width: 100%; /* ajusta el ancho del modal al 90% del ancho de la ventana */
+    max-width: 100%; /* ajusta el ancho del modal al 90% del ancho de la ventana */
     }
-  }
-  .carousel-control {
+}
+.carousel-control {
     position: absolute; /* posición absoluta para los botones */
     top: 50%; /* centra verticalmente */
     transform: translateY(-50%); /* ajusta la posición vertical */
@@ -56,13 +56,13 @@
     border: none; /* elimina el borde de los botones */
     border-radius: 50%; /* hace que los botones sean redondos */
     cursor: pointer; /* cambia el cursor al pasar por encima */
-  }
-  .carousel-control-prev {
+}
+.carousel-control-prev {
     left: 0; /* posiciona el botón de "atrás" a la izquierda */
-  }
-  .carousel-control-next {
+}
+.carousel-control-next {
     right: 0; /* posiciona el botón de "siguiente" a la derecha */
-  }
+}
 /*** Button ***/
 .btn {
     transition: .5s;
