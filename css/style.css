@@ -34,7 +34,7 @@
   }
 @media (min-width: 992px) {
     .modal-dialog {
-    max-width: 30%; /* ajusta el ancho del modal al 30% del ancho de la ventana */
+    max-width: 50%; /* ajusta el ancho del modal al 30% del ancho de la ventana */
     }
 }
 
