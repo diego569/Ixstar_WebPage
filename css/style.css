@@ -323,6 +323,15 @@
 
 
 /*** Team ***/
+.disabled-link {
+    pointer-events: none; /* Deshabilita los eventos de puntero (clics) */
+    color: #ABABAB !important; /* Color de texto gris para simular deshabilitado */
+    background-color: #E5E5E5;
+    border-color: #ffffff;
+    text-decoration: none; /* Elimina cualquier decoración de texto */
+    cursor: default; /* Cambia el cursor a predeterminado */
+  }
+ 
 .upload-btns {
     display: flex;
     justify-content: center;
